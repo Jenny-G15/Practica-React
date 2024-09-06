@@ -1,0 +1,62 @@
+body{
+    background-color: #ddd ;
+}
+#contenedorTareas,
+#contenedorEventos {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  
+}
+
+.contenedor-tareas,
+.contenedor-Evento {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contenedor-tareas p,
+.contenedor-Evento p {
+  margin: 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f8105e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #202122;
+}
+
+input[type="text"],
+input[type="date"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+div {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #f01d5c !important;
+}
