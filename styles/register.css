@@ -1,6 +1,6 @@
 /* FormRegister.css */
 :root{
-  --backgroundImage: url('../../img/92438699ec422030ba06644ee5d96bab.jpg');
+  --backgroundImage: url('../img/fondo\ navideño.jpg');
 }
 
 body{
@@ -11,7 +11,7 @@ body{
     background-color: #eee6e6b9; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(230, 16, 98, 0.897);
+    box-shadow: 0 5px 8px rgba(28, 29, 28, 0.897);
     width: 500px !important;
     height: 450px;
     margin-block-start: 4em; 
@@ -31,7 +31,7 @@ body{
      
 }
   .container button {
-    background-color: #f80964c2;
+    background-color: #f80909c2;
     border: none;
     margin-block-end: 1em;
     width: 115px !important;

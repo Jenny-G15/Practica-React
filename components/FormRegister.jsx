@@ -46,10 +46,10 @@ function FormRegister() {
     const { username, email, password } = formData;
     await registerUser(username, email, password);
 
-    Navigate("/Login");
+    Navigate("/");
   };
   
-  BodyBackground({background: '../../img/92438699ec422030ba06644ee5d96bab.jpg'})
+  BodyBackground({background: '../img/fondo\ navideño.jpg'})
 
   return (
     <div> 

@@ -1,17 +1,24 @@
 import Tareas from '../components/Tareas'
-import Eventos from '../components/Eventos'
 import "../styles/home.css";
 import BodyBackground from '../components/BodyBackground';
-import IMGPrueba from '../img/rosa.jpeg'
-
+import IMGPrueba from '../img/christmas.jpg'
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  function cerrarSesion() {
+    localStorage.removeItem('Autenticado');
+    navigate('/');
+  };
+
   return (
     <>
    <BodyBackground background={IMGPrueba}/>
   <div>
     <Tareas />
-    <Eventos />
+
+    <button className='sesion' onClick={cerrarSesion}>Cerrar Sesión</button> 
   </div>
  
     </>

@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Register  from '../pages/Register';
 import Login from '../pages/Login'
-import Protec from './Protec';
+import ProtectedRoute from './Protec';
+//import Protec from './Protec'; //
 
 const Routing = () => {
 
@@ -11,9 +12,10 @@ const Routing = () => {
      <Routes>
 
        <Route path="/" element={<Login />} />
-       <Route path="/login" element={<Login />} />
+       <Route path="/Home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
        <Route path="/Register" element={<Register/>} />
-       <Route path="/Home" element={ <Protec><Home/></Protec>} />
+      
+     
      
     
      </Routes>
@@ -21,3 +23,5 @@ const Routing = () => {
    );
 };
 export default Routing
+
+ //<Route path="/Home" element={ <Protec><Home/></Protec>} />

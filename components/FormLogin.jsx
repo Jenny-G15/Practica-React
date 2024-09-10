@@ -23,6 +23,7 @@ export default function FormLogin() {
       let userExist = users.find((user) => user.email === email && user.password == password)
       if (userExist) {
 
+        localStorage.setItem('Autenticado', 'true')
         Navigate("/Home");
 
       } else {

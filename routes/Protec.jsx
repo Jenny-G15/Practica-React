@@ -1,18 +1,16 @@
-import React from 'react'
-import { Navigate } from 'react-router-dom'
+import React from 'react';
+import { Navigate } from 'react-router-dom';
 
-export default function Protec({children}) {
-
-const user = false
-
-if(!user){
-    console.log("gvhbhbhbhbhbhb");
+const ProtectedRoute = ({ children }) => {
     
-   
-return <Navigate to ="/login"/>
+    const estaAutenticado = localStorage.getItem('Autenticado') === 'true'; 
 
-}
+    if (!estaAutenticado ) {
+       
+        return <Navigate to="/" />;
+    }
 
-return children
+    return children;
+};
 
-}
+export default ProtectedRoute;

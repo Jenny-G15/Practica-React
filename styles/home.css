@@ -1,35 +1,46 @@
 body{
-    background-color: #ddd ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#contenedorTareas,
-#contenedorEventos {
+#contenedorTareas{
   margin: 20px;
   display: flex;
   justify-content: center;
   height: auto;
-  
+  margin-left: 30px !important;
+}
+.sesion {
+  margin-left: 150px !important;
+  background-color: #0c8a07;
 }
 
-.contenedor-tareas,
-.contenedor-Evento {
+.prueba{
+  margin-left: 400px;
+}
+.contacto {
+  margin: 5px;
+  background-color: #21ce1b;
+}
+
+.contenedor-tareas{
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  margin-right: 20px;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.contenedor-tareas p,
-.contenedor-Evento p {
+.contenedor-tareas p {
   margin: 0;
   font-size: 16px;
 }
 
 button {
-  background-color: #f8105e;
+  background-color: #fc1f1f;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -41,11 +52,10 @@ button {
 }
 
 button:hover {
-  background-color: #202122;
+  background-color: #0c8a07;
 }
 
-input[type="text"],
-input[type="date"] {
+input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 8px;
@@ -58,5 +68,5 @@ div {
 }
 
 h2 {
-  color: #f01d5c !important;
+  color: #ee1111 !important;
 }
